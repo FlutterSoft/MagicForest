@@ -106,11 +106,11 @@ header h2:hover{
      text-shadow: 0px 12px 9px rgba(255, 255, 255, 0.5);
 }
 
-#basicBlock{
+.basicBlock{
      margin-bottom: 200px;
 } 
 
-#basicBlock h2{
+.basicBlock h2{
      color: whitesmoke;
      font-size: 2.5rem;
      font-weight: 700;
