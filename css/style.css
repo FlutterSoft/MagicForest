@@ -22,6 +22,8 @@
 /*******************************************/
 html {
      font-family: 'Lato', sans-serif;
+     scroll-behavior: smooth;
+
 
 }
 
@@ -67,6 +69,10 @@ nav h1 {
      text-shadow: 0px 12px 9px rgba(255, 255, 255, 0.1);
 }
 
+nav h1 span {
+     font-weight: 200;
+     font-size: 90%;
+}
 
 
 header nav a {
@@ -75,9 +81,6 @@ header nav a {
      text-decoration: none;
      padding: 0 5px;
 }
-
-
-
 
 header nav a:hover {
      transition: all 400ms;
@@ -108,6 +111,7 @@ header h2:hover{
 
 .basicBlock{
      margin-bottom: 200px;
+
 } 
 
 .basicBlock h2{
@@ -120,9 +124,6 @@ header h2:hover{
 }
 
 
-
-
-
 div.photoBlock {
      margin: -100px auto;
      width: 65%;
@@ -131,7 +132,8 @@ div.photoBlock {
      flex-wrap: wrap;
      justify-content: space-evenly;
      align-items: flex-start;
-     
+     max-width: 1000px;
+    
      
 }
 
@@ -143,6 +145,7 @@ div.photoBlock div {
      padding: 5%;
      box-shadow: 0px 1px 3px 0.1px black;
      text-align: left;
+     text-shadow: 0px 4px 6px black;
 }
 
 .flexBottomLeft{
@@ -164,6 +167,8 @@ div.photoBlock div {
 div.photoBlock div:hover {
      box-shadow: 0px 12px 20px 5px black;
      transition: all 400ms;
+     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.589);
+
 }
 
 #pBlock2 {
@@ -194,13 +199,100 @@ div.photoBlock div:hover {
      background-image: url(../images/forest.jpg);
      background-size: cover;
      background-position: center;
+}
+
+#sectionAbout{
+     height: 500px;
+     color: whitesmoke;
+     background-color: rgba(42,42,42,1);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+
+#sectionAbout h2 {
+     font-weight: 400;
+     font-style: normal;
+     width: 80%;
+     text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.37);
+
+}
+#sectionAbout h2 span{
+     font-style: italic;
+     font-weight: 600;
+}
+#sectionAbout p {
+     color: whitesmoke;
+     font-size: 1.4em;
+     width: 80%;
+}
+
+
+div.columnBlock{
+     background-color: white;
+     display: flex;
+     justify-content: space-evenly;
+     width: 80%;
+     max-width: 1000px ;
+     margin: -300px auto 0 auto;
+     border: 0.3px solid rgba(128, 128, 128, 0.15);
+     border-radius: 20px;
+     box-shadow: 0px 1px 5px 0.1px rgba(0, 0, 0, 0.363);
 
 }
 
+div.column {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 2%;
+     text-align: center;
+     width: 33.3333333%;
+     font-size: 100%;
+}
+
+.column h2, .column h3, .column h4 {
+     font-weight: 600;
+     text-shadow: 0px 4px 2px rgba(107, 107, 107, 0.17);
+}
+
+.column div {
+     min-height: 280px;
+     
+}
+#firstColumn {
+     border-right: 0.3px solid rgba(128, 128, 128, 0.15);
+}
+#lastColumn {
+     border-left: 0.3px solid rgba(128, 128, 128, 0.15);
+}
+
+.column ul {
+     list-style-type: none;
+     text-align: center;
+     margin: auto;
+     padding: 0;
+}
+
+.column li {
+     padding: 10px 0;
+}
+
+.column img {
+     width: 50%;
+}
 footer {
      height: 300px;
      background-color: rgba(42,42,42,1);
 }
+
+.pointer {
+     cursor:pointer;
+}
+
 
 
 @media screen and (max-width: 520px) {
