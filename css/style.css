@@ -121,6 +121,8 @@ header h2:hover{
 
 
 
+
+
 div.photoBlock {
      margin: -100px auto;
      width: 65%;
@@ -149,7 +151,7 @@ div.photoBlock div {
      align-items: flex-end;
 }
 
-div.photoBlock div:nth-child(1) {
+#pBlock1 {
      transition: all 400ms;
      width: 53%; 
      margin-top: 2%;
@@ -164,40 +166,36 @@ div.photoBlock div:hover {
      transition: all 400ms;
 }
 
-div.photoBlock div:nth-child(2) {
+#pBlock2 {
      width: 42%; 
      margin-top: 2%;
      background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/bird.jpg);
      background-size: cover;
      background-position: center;
-
-
 }
-div.photoBlock div:nth-child(3),div.photoBlock div:nth-child(4),div.photoBlock div:nth-child(5) {
+#pBlock3, #pBlock4, #pBlock5 {
      width: 31%;
      margin-top:2%;
 }
-div.photoBlock div:nth-child(3) {
+#pBlock3 {
      background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/lizardgrey.jpg);
      background-size:cover;
      background-repeat:no-repeat;
      background-position: center;
 
 }
-div.photoBlock div:nth-child(4) {
+#pBlock4 {
      background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/tree.jpg);
      background-size: cover;
      background-position: center;
 
 }
-div.photoBlock div:nth-child(5) {
+#pBlock5 {
      background-image: url(../images/forest.jpg);
      background-size: cover;
      background-position: center;
 
 }
-
-
 
 footer {
      height: 300px;
