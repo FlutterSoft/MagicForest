@@ -3,7 +3,7 @@ A little project using html/css to experiment. Had fun playing around with box s
 
 **Link to project:** https://magicforest.netlify.app/
 
-![alt tag](https://imgur.com/a/gZKvDEx)
+![alt tag](https://i.imgur.com/lutJTst.png)
 
 ## How It's Made:
 
