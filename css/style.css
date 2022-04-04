@@ -18,20 +18,14 @@
 }
 
 /******************************************
-/* BASE STYLES
+/* STYLE
 /*******************************************/
 html {
      font-family: 'Lato', sans-serif;
      scroll-behavior: smooth;
 }
 
-body {
-}
 
-
-/******************************************
-/* LAYOUT
-/*******************************************/
 header {
      color: whitesmoke;
 }
@@ -61,6 +55,16 @@ header nav {
      align-items: baseline;
      flex-wrap: wrap;
 
+}
+
+.green {
+     color: rgb(0, 163, 107);
+     transition: all 400ms;
+
+}
+.green:hover {
+     transition: all 400ms;
+     text-shadow: 0px 12px 15px black;
 }
 
 nav h1 {
@@ -108,7 +112,7 @@ header h2:hover{
 }
 
 .basicBlock{
-     margin-bottom: 200px;
+     margin-bottom: 120px;
 
 } 
 
@@ -230,8 +234,8 @@ div.columnBlock{
      display: flex;
      justify-content: space-evenly;
      width: 80%;
-     max-width: 1000px ;
-     margin: -300px auto 0 auto;
+     max-width: 1000px;
+     margin: -220px auto 0 auto;
      border: 0.3px solid rgba(128, 128, 128, 0.15);
      border-radius: 20px;
      box-shadow: 0px 1px 5px 0.1px rgba(0, 0, 0, 0.363);
@@ -254,7 +258,7 @@ div.column {
 }
 
 .column div {
-     min-height: 280px;
+     min-height: 13rem;
      
 }
 #firstColumn {
@@ -279,8 +283,14 @@ div.column {
      width: 50%;
 }
 footer {
-     height: 300px;
+     height: 200px;
+     color: white;
      background-color: rgba(42,42,42,1);
+}
+
+footer div {
+     padding: 3rem 0;
+     text-align: center;
 }
 
 .pointer {
@@ -288,8 +298,8 @@ footer {
 }
 
 
-
-@media screen and (max-width: 520px) {
+/* MEDIA QUERIES  */
+@media screen and (max-width: 850px) {
      header nav{
           justify-content: center;
      }
@@ -298,6 +308,9 @@ footer {
           margin: auto;
           text-align: center;
      }
+     nav a:nth-child(2){
+          display: none;
+     }
      div.photoBlock {
           background-color: rgba(0, 0, 0, 0);
      }
@@ -305,8 +318,13 @@ footer {
      div.photoBlock div{
           min-width: 100%;
      }
+     div.columnBlock{
+          display: block;
+     }
+     div.column {
+          width: 100%;
+     }
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+
+
